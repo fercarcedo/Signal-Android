@@ -307,5 +307,5 @@
         <item>2</item>
     </string-array>
 
-    <string name="preferences__autodark_theme">Auto Dark</string>
+    <string name="preferences__autodark_theme">Automatic Dark</string>
 </resources>

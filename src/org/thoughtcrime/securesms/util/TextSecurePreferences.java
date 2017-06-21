@@ -613,30 +613,6 @@ public class TextSecurePreferences {
     return getMediaDownloadAllowed(context, MEDIA_DOWNLOAD_ROAMING_PREF, R.array.pref_media_download_roaming_default);
   }
 
-  public static long getSunriseTime(Context context) {
-    return getLongPreference(context, SUNRISE_TIME_PREF, -1);
-  }
-
-  public static long getSunsetTime(Context context) {
-    return getLongPreference(context, SUNSET_TIME_PREF, -1);
-  }
-
-  public static long getSunsetLastModifiedTime(Context context) {
-    return getLongPreference(context, TIME_ELAPSED_PREF, -1);
-  }
-
-  public static void setSunriseTime(Context context, long sunriseTimeMillis) {
-    setLongPreference(context, SUNRISE_TIME_PREF, sunriseTimeMillis);
-  }
-
-  public static void setSunsetTime(Context context, long sunsetTimeMillis) {
-    setLongPreference(context, SUNSET_TIME_PREF, sunsetTimeMillis);
-  }
-
-  public static void setSunsetLastModifiedTime(Context context, long sunsetLastModifiedTimeMillis) {
-    setLongPreference(context, TIME_ELAPSED_PREF, sunsetLastModifiedTimeMillis);
-  }
-
   private static @NonNull Set<String> getMediaDownloadAllowed(Context context, String key, @ArrayRes int defaultValuesRes) {
     return getStringSetPreference(context,
                                   key,
